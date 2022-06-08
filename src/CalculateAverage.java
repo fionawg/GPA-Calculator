@@ -26,7 +26,7 @@ public class CalculateAverage {
             s.close();
             Scanner scan = new Scanner(System.in);
             System.out.println("Hello " + p.getName() + ". Welcome back!");
-            System.out.print("Would you like to change your name? (yes or no) ");
+            System.out.print("Would you like to change your name? [yes or no] ");
             if (scan.nextLine().equals("yes")){
                 System.out.print("What would you like to change your name to? ");
                 p.setName(scan.nextLine());
@@ -52,7 +52,7 @@ public class CalculateAverage {
                     choiceL(p);
                 }
                 System.out.println();
-                System.out.print("Add (a), Remove (r), Check GPA (c), List Classes (l), or Exit (any key): ");
+                System.out.print("Add [a], Remove [r], Check GPA [c], List Classes [l], or Exit [any key]: ");
                 choice = scan.nextLine();
             }
             System.out.println();
@@ -83,7 +83,7 @@ public class CalculateAverage {
                     choiceL(p);
                 }
                 System.out.println();
-                System.out.print("Add (a), Remove (r), Check GPA (c), List Classes (l), or Exit (any key): ");
+                System.out.print("Add [a], Remove [r], Check GPA [c], List Classes [l], or Exit [any key]: ");
                 choice = scan.nextLine();
             }
             System.out.println("\nYou have a GPA of " + p.getOverallGrade() + ".");
